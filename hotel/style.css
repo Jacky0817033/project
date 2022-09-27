@@ -1,0 +1,132 @@
+/************************nav*************************/
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list > li > a {
+    text-decoration: none;
+    color:black;
+}
+.nav-item:hover{
+    background-color: #b2bec3;
+    transition: background-color .3s ease-in-out
+}
+
+.logos{
+    width: 70%;
+}
+/*************************header*************************/
+header{
+    background-image: url('./img/jumbotron.jpg');
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    object-fit: cover;
+}
+
+.info{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 40vw;
+}
+.description{
+    line-height: 2em;
+}
+/* hotel showcase */
+.rooms{
+    width: 100%;
+    height:30vh;
+}
+.room-display{
+    overflow: hidden;
+}
+.rooms:hover{
+    transform : scale(1.1);
+    transition: all.3s ease-in-out
+}
+/* testimonial */
+.client-card{
+    overflow: hidden;
+    border-radius: 20px ;
+}
+.client-info{
+    background-color: #55efc4;
+    padding:30px 15px;
+    position: relative;
+}
+.client-info > img{
+    position: absolute;
+    left: 50%;
+    bottom: 70%;
+    transform: translateX(-50%);
+    border: 3px solid #7bbff0;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.client-info > p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/************************footer************************/
+.footer-content{
+    background-color:#031e31;
+    color:#fff;
+    padding: 50px 0px;
+    margin-bottom: 0px;
+}
+/************************google maps************************/
+.google-maps {
+    position: relative;
+    padding-top: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/************************scroll top*********/
+.scrollTopBtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #5758BB;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+
+}
+
+.scrollTopBtn > i{
+    color:black;
+    position: absolute;
+    top:25%;
+    left: 32%;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.scrollTopBtn:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}

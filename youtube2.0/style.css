@@ -1,0 +1,166 @@
+/* ************global elements*******************/
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* *****************nav************ */
+nav{
+    padding:10px 5px;
+    border-bottom:1px solid #dfe6e9;
+}
+
+nav i {
+    color:#636e72;
+}
+
+.toggleList a i {
+    font-size: 1.2rem;
+    color:#636e72
+}
+
+.profoile{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.leftnav > a > i{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+/**************aside*******************/
+/* aside{
+    position: fixed;
+    top: 10px;
+} */
+
+#callAsideNav{
+    width: 250px;
+    height: 700px;
+    top: 10px;
+    z-index: 10;
+    position:absolute;
+    background-color:#fff;
+    transition: left .3s;
+    overflow: auto;
+}
+aside.offOpen{
+    left:-100%;
+}
+
+aside ul{
+    padding:0px;
+}
+aside ul li{
+    display: flex;
+    position: relative;
+    padding: 15px 0px 0px 40px;
+}
+
+aside ul li i{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+
+aside ul li:hover{
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+
+/* *************content***************/
+
+
+
+
+
+/* RWD youtube videos  */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ******subscribe*******/
+
+.youtuber{
+    border-top:1px solid #dfe6e9;
+    border-bottom:1px solid #dfe6e9;
+}
+.youtuber > button{
+    flex-basis: 20%;
+    max-width: 70px;
+    max-height: 40px;
+    border: 1px solid #c23616;
+    background-color: #c23616;
+    color: #fff;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.youtuber > button.active {
+    flex-basis: 20%;
+    max-width: 70px;
+    max-height: 40px;
+    border-radius: 2px;
+    border: 1px solid #b2bec3;
+    background-color: #b2bec3;
+    color: #fff;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#subBell{
+    display:none;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*************comment *************/
+.reviwer-card{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*************right panel *************/
+.selector ul li {
+    border: 1px solid #dfe6e9;
+    background-color: #dfe6e9;
+    color: black;
+    border-radius:15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.selector ul li.isOpen{
+    background-color: black;
+    color: #fff;
+}
+
+.small-description a{
+    font-size: 14px;
+    color:#636e72;
+}
+.small-description a span{
+    font-size: 10px;
+}

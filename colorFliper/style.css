@@ -1,0 +1,97 @@
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+ul{
+    list-style: none;
+}
+
+
+html,
+body{
+    width: 100vw;
+    height: 98vh;
+}
+/*--------------nav------------------------*/
+nav{
+    width: 100%;
+    background-color:#dff9fb;
+    box-shadow: 0px 11px 5px 0px rgba(0,0,0,0.75);
+}
+
+.nav-container{
+    width: 80%;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.nav-list{
+    padding:0;
+}
+.nav-list li{
+    margin-top: 1rem;
+    display:inline-block;
+    margin-left: 2rem;
+}
+
+.nav-list li >a:hover{
+    color:#dfe6e9;
+}
+
+/*---------------color contianer------------------*/
+main{
+    width: 100%;
+}
+.color-container{
+    width: 50%;
+    height:91vh;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 5rem;
+
+}
+
+.color{
+    position: relative;
+    top: 30px;
+    border: 5px solid #30336b;
+    border-radius: 20px;
+    background-color: #30336b;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.color-container .color> h2{
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+}
+
+.color-container .color> p{
+    font-size: 1.8rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
+}
+.color-container> button{
+    padding: 1.5rem 1.75rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    color:#dff9fb;
+    background-color: #30336b;
+    border-style: none;
+    font-weight: 700;
+    transition: all 0.2s ease-in;
+    margin-top: 30px;
+}
+
+.color-container > button:hover{
+    cursor: pointer;
+    color:#dbdbe7;
+    background-color:#686de0;
+}
